@@ -94,16 +94,5 @@ export default class webSocket extends Server {
 
 }
 
-const ws = new webSocket()
 
-ws.createSocket().then(socket => {
-
-    socket?.on('data', (data: any) => {
-        log(data)
-    })
-
-})
-
-
-ws.listen(9000)
 
